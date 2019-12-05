@@ -24,7 +24,9 @@
       console.log(map1);
       // expected output: Array [2, 8, 18, 32]
    
-    ~~~  
+    index 사용법(배열과 index를 같이 넘겨줌)
+    {genres.map((genre,index)=> <li className="genres_genre">{index}{genre}</li>)}
+    ~~~       
     ~~~
     REACT
         {foods.map(dish=>{
@@ -77,4 +79,16 @@
 * axios
     * fetch 위에 있는 작은 Layer
     * 땅콩위에 작은 초콜릿
-                                                        
+    
+* gh-pages 
+    * github에서 제공 하는 무료 웹사이트
+    * 사용방법
+        1. npm i gh-pages
+        2. package.json 수정            
+            ~~~
+           맨아래에 추가
+            "homepage" : http://fireyw.github.io/movie_app_2019
+           scripts 에 추가
+            "deploy": "gh-pages -d build"
+            "predeploy": "npm run build"           
+           ~~~
